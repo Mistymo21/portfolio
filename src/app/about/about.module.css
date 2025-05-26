@@ -1,5 +1,7 @@
 .container{
     padding: 50px;
+  width: 800px;
+
 }
 
 .title{
@@ -19,4 +21,15 @@
 .desc{
     color: #7D7373;
     font-weight: 100;
+}
+
+@media (max-width: 639px) {
+  .container{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+  
 }

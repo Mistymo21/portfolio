@@ -38,3 +38,25 @@
     text-decoration: none;
     margin-top: 20px;
 }
+
+
+@media (max-width: 640px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .card{
+        margin: 8px;
+        padding: 12px;
+    }
+    .card h2{
+        font-size: 1.25rem;
+    }
+    .card p{
+        font-size: 0.875rem;
+    }
+    .button{
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+    
+}

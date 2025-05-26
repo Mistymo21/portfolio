@@ -34,3 +34,22 @@
     color: #7D7373;
     font-size: 20px;
 }
+
+@media (max-width: 639px) {
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .name{
+        font-size: 36px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .info{
+        padding: 20px;
+    }
+}
