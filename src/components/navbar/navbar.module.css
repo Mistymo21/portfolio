@@ -15,22 +15,19 @@
     color: aqua;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 639px) {
     .container{
-        display: flex;
-        align-items: center;
-        margin-left: 50px;
+       width: 100%;
     }
-
-
     .container h1{
         display: none;
     }
     .link{
-       font-size: 14px;
-       display: flex;
-       gap: 20px;
-       justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+       
     }
     
 }
