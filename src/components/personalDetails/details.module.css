@@ -48,3 +48,10 @@
 .btn:hover {
   background-color: #ff7f00;
 }
+
+@media (max-width : 639px) {
+  .personal{
+    width: 90%;
+  }
+  
+}

@@ -10,7 +10,7 @@ const details = () => {
     <div>
       {" "}
       <div className={styles.personal}>
-        <h1>Yusuf Muhammed</h1>
+        <h1>Yusuf Muhammed .B.</h1>
         <Image src={Personal} alt="" className={styles.img} />
         <div className={styles.desc}>
           <p>Based in Nigeria</p>
