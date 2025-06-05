@@ -14,7 +14,7 @@ const details = () => {
         <Image src={Personal} alt="" className={styles.img} />
         <div className={styles.desc}>
           <p>Based in Nigeria</p>
-          <span> FullStack Website Developer</span>
+          <span> Web Developer</span>
 
           <div className={styles.icons}>
             <Link href="https://www.facebook.com/share/1Bht3yLme1/?mibextid=qi2Omg">
