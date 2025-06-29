@@ -1,33 +1,97 @@
-.container{
+/* navbar.module.css */
+
+.container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  padding: 0 1rem;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Desktop links */
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #ff5c00;
+}
+
+.active {
+  color: #ff5c00;
+  border-bottom: 2px solid #ff5c00;
+}
+
+/* Hamburger icon */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Mobile Menu Hidden by Default */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  padding: 1rem;
+  gap: 1rem;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+  .links {
+    display: none;
+
+  }
+
+  .menuButton {
+    display: block;
+    margin-right: 3rem;
+  }
+
+  .mobileMenu {
     display: flex;
-    justify-content: space-between; 
-    margin-top: 20px;
-    position: sticky;
-}
-
-.link{
-    display: flex;
-    gap: 20px;
-  
-}
-
-.link a:hover{
-    color: aqua;
-}
-
-@media (max-width: 639px) {
-    .container{
-       width: 100%;
-    }
-    .container h1{
-        display: none;
-    }
-    .link{
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        width: 100%;
-       
-    }
-    
+  }
 }

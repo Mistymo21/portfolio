@@ -1,59 +1,131 @@
-.personal {
-  border: 1px solid rgb(44, 41, 41);
-  padding: 20px 20px;
+.container {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  margin-left: 20px;
-  width: 300px;
-  border-radius: 10px;
-  height: 500px;
-  margin-bottom: 0;
-
+  justify-content: center;
+  padding: 2rem;
+  
+  
 }
 
-.personal h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.card {
+  /* background-color: #fff; */
+  border: 1px solid #ccc;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  
 }
 
-.img {
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
   width: 150px;
   height: 150px;
-  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ff5c00;
+  margin: 0 auto 1rem auto;
 }
 
-.desc  {
-  text-align: center;
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
+.location {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
 
+.role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
 
-.icons {
+.socials {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
-  font-size: 30px;
-  margin-top: 20px;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #333;
 }
 
-.btn {
+.socials a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff5c00;
+}
+
+.hireLink {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.hireButton {
   background-color: #ff5c00;
-  padding: 10px 60px;
-  margin-top: 10px;
-  border-radius: 20px;
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.hireButton:hover {
   background-color: #ff7f00;
 }
 
-@media (max-width : 639px) {
-  .personal{
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem 1rem;
     width: 90%;
   }
-  
+
+  .socials {
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
 }
