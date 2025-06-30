@@ -1,67 +1,106 @@
+/* Full page reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Main container with responsive grid */
 .container {
-  /* padding: 60px; */
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 24px;
+  padding: 40px 16px;
   width: 100%;
-
-
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-
-* .title {
-  font-size: 35px;
-  font-weight: 100;
-  font-family: Libre Franklin;
-  margin-bottom: 20px;
+/* Responsive grid for medium+ screens */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
+/* Section title */
+.title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ff5c00;
+  margin-bottom: 30px;
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top: 60px;
+}
+
+/* Card styles */
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
+
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(255, 92, 0, 0.3);
 }
 
 .card h2 {
-  font-size: 1.5rem;
-  color: #ccc;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 500;
 }
+
 .card p {
   font-size: 1rem;
-  color: #666;
+  color: #c0c0c0;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
+/* Button styling */
 .button {
   background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #ff5c00;
+  color: #ff5c00;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  text-decoration: none;
-  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (max-width: 640px) {
+.button:hover {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 480px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
+
   .card {
-    margin: 8px;
-    padding: 12px;
+    padding: 16px;
   }
+
   .card h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
+
   .card p {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
   }
+
   .button {
+    font-size: 0.9rem;
     padding: 8px 16px;
-    font-size: 0.875rem;
   }
 }

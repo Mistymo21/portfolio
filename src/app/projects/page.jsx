@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './projects.module.css'
-const Blog = () => {
+const Projects = () => {
   return (
     <div>
       <h1 className={styles.title}>Projects</h1>
@@ -55,5 +55,5 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default  Projects
 
