@@ -10,7 +10,7 @@ const Projects = () => {
           <p>
             A full-stack web app that streamlines the student clerance process. Feature include role-based login, document uploads, digital approvals, real-time status tracking and a  printable final clearance form. Built with Next.js 14, MongoDB, and Moudle CSS.  
           </p>
-          <a href="https://e-clearance.vercel.app//" target="_blank" rel="noopener noreferrer">
+          <a href="https://clearance-system.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button className={styles.button}>View Project</button>
             </a>
         </div>
