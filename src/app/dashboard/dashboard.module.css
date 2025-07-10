@@ -77,7 +77,7 @@
 @media (max-width: 768px) {
   .container{
     padding: 20px 0;
-    margin-right: 50px;
+    margin-right: 65px;
   }
   .wrapper {
     flex-direction: column;
