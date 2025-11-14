@@ -16,7 +16,7 @@ const Contact = () => {
     message: ''
   })
 
-  const handleInputChange = () => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
@@ -24,7 +24,7 @@ const Contact = () => {
     }))
   }
 
-  const sendEmail = () => {
+  const sendEmail = (e) => {
     e.preventDefault()
     setIsLoading(true)
 

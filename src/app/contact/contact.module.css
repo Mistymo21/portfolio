@@ -433,7 +433,7 @@
 }
 
 /* Toast Overrides */
-:global(.Toastify__toast) {
+/* :global(.Toastify__toast) {
   background: rgba(15, 23, 42, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -443,4 +443,4 @@
 
 :global(.Toastify__progress-bar) {
   background: linear-gradient(90deg, #3b82f6, #8b5cf6) !important;
-}
+} */
