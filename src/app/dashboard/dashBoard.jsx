@@ -84,11 +84,11 @@ const DashBoard = () => {
                 <span className={styles.statLabel}>Years Experience</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.statNumber}>50+</span>
+                <span className={styles.statNumber}>8+</span>
                 <span className={styles.statLabel}>Projects Completed</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.statNumber}>100%</span>
+                <span className={styles.statNumber}>5%</span>
                 <span className={styles.statLabel}>Client Satisfaction</span>
               </div>
             </div>
