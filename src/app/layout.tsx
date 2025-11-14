@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/navbar/navbar";
 import Details from "@/components/personalDetails/details";
-
 import "./globals.css";
 
-
-
-
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My portfolio",
+  title: "Portfolio - Professional Developer",
+  description: "Creative developer portfolio showcasing skills and projects",
 };
 
 export default function RootLayout({
@@ -19,14 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body>
         <Navbar />
         <div className="details">
           <div className="details-container">
-
-        <Details/>
+            <Details />
           </div>
-        {children}
+          {children}
         </div>
       </body>
     </html>
