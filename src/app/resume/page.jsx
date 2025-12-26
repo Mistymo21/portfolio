@@ -67,13 +67,13 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className={styles.infoCard}>
+        {/* <div className={styles.infoCard}>
           <FaCalendar className={styles.infoIcon} />
           <div className={styles.infoContent}>
             <h3>2+ Years</h3>
             <p>Professional Experience</p>
           </div>
-        </div>
+        </div> */}
         
         <div className={styles.infoCard}>
           <FaMapMarkerAlt className={styles.infoIcon} />
@@ -171,7 +171,7 @@ const Resume = () => {
         <h2 className={styles.sectionTitle}>Resume Preview</h2>
         <div className={styles.previewContainer}>
           <iframe
-            src="/Yusuf_Muhammed_CV.pdf"
+            src="/Yusuf Muhammed CV.pdf"
             className={styles.preview}
             title="Resume Preview"
           />

@@ -16,60 +16,59 @@ const About = () => {
   const highlights = [
     {
       icon: <FaCode />,
-      title: 'Clean Code',
-      description: 'Writing modular, maintainable code with modern JavaScript (ES6+)'
+      title: 'Clean Architecture',
+      description: 'Writing modular, maintainable code with modern JavaScript and best practices'
     },
     {
       icon: <FaRocket />,
-      title: 'Performance',
-      description: 'Building high-performance, accessible, and visually engaging websites'
+      title: 'Performance Focus',
+      description: 'Building fast, accessible, and optimized web applications'
     },
     {
       icon: <FaTools />,
-      title: 'Full Stack',
-      description: 'Frontend development, state management, API integration, and optimization'
+      title: 'Full-Stack Development',
+      description: 'Frontend interfaces, backend APIs, state management, and system integration'
     },
     {
       icon: <FaLightbulb />,
-      title: 'Problem Solving',
-      description: 'Turning complex problems into simple, elegant user experiences'
+      title: 'Problem-Solving',
+      description: 'Translating complex requirements into clear and effective solutions'
     }
   ];
 
   return (
     <div className={styles.container}>
-      {/* Animated Background */}
       <div className={styles.backgroundAnimation}></div>
-      
-      {/* Header Section */}
+
+      {/* Header */}
       <div className={styles.header}>
         <h1 className={styles.title}>
           About <span className={styles.highlight}>Me</span>
         </h1>
         <div className={styles.titleUnderline}></div>
         <p className={styles.subtitle}>
-          Passionate Full Stack Developer crafting digital experiences
+          Full Stack Developer focused on scalable and reliable web solutions
         </p>
       </div>
 
-      {/* Main Content */}
       <div className={styles.content}>
-        {/* Introduction Card */}
+        {/* Introduction */}
         <div className={styles.card}>
           <div className={styles.cardHeader}>
             <div className={styles.cardIcon}>
               <FaLightbulb />
             </div>
-            <h2 className={styles.cardTitle}>My Journey</h2>
+            <h2 className={styles.cardTitle}>Professional Overview</h2>
           </div>
           <p className={styles.intro}>
-            I'm a passionate and detail-oriented <strong>web developer</strong> who specializes 
-            in building seamless, responsive, and user-friendly web applications. 
-            I love creating solutions that not only work well but feel great to use.
+            I am a <strong>full stack web developer</strong> with a strong focus on building
+            scalable, responsive, and user-centric applications. My work emphasizes
+            clean design, solid engineering principles, and solutions that align with
+            real business needs.
           </p>
         </div>
 
-        {/* Skills Grid */}
+        {/* Skills */}
         <div className={styles.skillsSection}>
           <h2 className={styles.sectionTitle}>Technical Skills</h2>
           <div className={styles.skillsGrid}>
@@ -79,8 +78,8 @@ const About = () => {
                 <div className={styles.skillInfo}>
                   <h3 className={styles.skillName}>{skill.name}</h3>
                   <div className={styles.skillBar}>
-                    <div 
-                      className={styles.skillProgress} 
+                    <div
+                      className={styles.skillProgress}
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
@@ -91,9 +90,9 @@ const About = () => {
           </div>
         </div>
 
-        {/* Expertise Highlights */}
+        {/* Highlights */}
         <div className={styles.highlightsSection}>
-          <h2 className={styles.sectionTitle}>What I Bring</h2>
+          <h2 className={styles.sectionTitle}>Core Strengths</h2>
           <div className={styles.highlightsGrid}>
             {highlights.map((highlight, index) => (
               <div key={index} className={styles.highlightCard}>
@@ -105,46 +104,46 @@ const About = () => {
           </div>
         </div>
 
-        {/* Detailed Description */}
+        {/* Details */}
         <div className={styles.detailsSection}>
           <div className={styles.detailCard}>
-            <h3 className={styles.detailTitle}>Frontend Excellence</h3>
+            <h3 className={styles.detailTitle}>Frontend Development</h3>
             <p className={styles.detailText}>
-              My core expertise lies in <strong>React and Next.js</strong>, where I focus on 
-              building high-performance, accessible, and visually engaging websites. 
-              From frontend development and state management to API integration and 
-              performance optimization, I enjoy working on every layer of a project 
-              that delivers real value.
+              I specialize in building modern user interfaces with
+              <strong> React and Next.js</strong>, focusing on performance,
+              accessibility, and maintainability. I work comfortably with
+              state management, API integration, and UI optimization to deliver
+              production-ready applications.
             </p>
           </div>
 
           <div className={styles.detailCard}>
-            <h3 className={styles.detailTitle}>Code Quality & Methodology</h3>
+            <h3 className={styles.detailTitle}>Engineering Practices</h3>
             <p className={styles.detailText}>
-              I write clean, modular, and maintainable code using modern JavaScript (ES6+), 
-              and I'm always exploring better ways to implement scalable UI architecture. 
-              I'm comfortable working independently or in collaborative teams and follow 
-              Agile methodologies to ensure efficient and timely delivery.
+              My development approach emphasizes clean, readable, and reusable
+              code using modern JavaScript and structured patterns. I value
+              collaboration, clear communication, and disciplined workflows,
+              including Agile-style development processes.
             </p>
           </div>
 
           <div className={styles.detailCard}>
-            <h3 className={styles.detailTitle}>Continuous Growth</h3>
+            <h3 className={styles.detailTitle}>Backend & Integration</h3>
             <p className={styles.detailText}>
-              Beyond coding, I'm constantly learning new tools and technologies to stay 
-              up-to-date in the fast-evolving web landscape. I'm currently exploring 
-              <strong> TypeScript, Tailwind CSS, backend integrations</strong>, and building 
-              fullstack applications. I take pride in continuous self-improvement, whether 
-              through projects, open-source contributions, or tech communities.
+              Alongside frontend development, I build backend services using
+              <strong> Node.js and MongoDB</strong>, designing APIs and data
+              flows that support secure and scalable applications. I enjoy
+              working across the stack to ensure smooth system integration.
             </p>
           </div>
 
           <div className={styles.detailCard}>
-            <h3 className={styles.detailTitle}>My Mission</h3>
+            <h3 className={styles.detailTitle}>Professional Focus</h3>
             <p className={styles.detailText}>
-              My goal is to create web experiences that not only work well but feel great 
-              to use — blending design and functionality into polished, production-ready 
-              solutions that make a real impact for users and businesses alike.
+              My objective is to deliver reliable digital products that combine
+              thoughtful design with solid engineering. I aim to create solutions
+              that are not only functional but sustainable, scalable, and aligned
+              with long-term business goals.
             </p>
           </div>
         </div>
