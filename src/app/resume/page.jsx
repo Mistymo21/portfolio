@@ -86,11 +86,11 @@ const Resume = () => {
 
       {/* Action Buttons */}
       <div className={styles.actions}>
-        <a href="/Yusuf_Muhammed_CV.pdf" download className={styles.downloadBtn}>
+        <a href="/Yusuf Muhammed CV.pdf" download className={styles.downloadBtn}>
           <FaDownload className={styles.btnIcon} />
           Download PDF
         </a>
-        <a href="/Yusuf_Muhammed_CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.viewBtn}>
+        <a href="/Yusuf Muhammed CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.viewBtn}>
           <FaEye className={styles.btnIcon} />
           View in Browser
         </a>
